@@ -1,0 +1,123 @@
+\documentclass{mcmthesis}
+\mcmsetup{CTeX = false,
+        tcn = 2311153, problem = C,
+        sheet = true,
+        titleinsheet = true,
+        keywordsinsheet = true,
+        titlepage=false,
+        abstract=true}
+\usepackage[T1]{fontenc}
+\usepackage{palatino}
+\usepackage{lipsum}
+\usepackage{overcite}
+\usepackage{subfig}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{wrapfig} 
+\usepackage{appendix}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{tabularray}
+\usepackage{float}
+\usepackage{indentfirst}
+\usepackage{diagbox}
+\usepackage{titlesec}
+\usepackage{titletoc}
+%\geometry{a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm}
+\graphicspath{{figures/}}
+\titlecontents{section}
+[0.6cm]
+{\bf}
+{\contentslabel{1.2em}}
+{}
+{\titlerule*[0.5pc]{$\cdot$}\contentspage\hspace*{0cm}}
+
+\titlecontents{subsection}
+[1.3cm]
+{}
+{\contentslabel{2em}}
+{}
+{\titlerule*[0.5pc]{$\cdot$}\contentspage\hspace*{0cm}}
+\newcommand{\itemEq}[1]{
+	\begingroup
+	\setlength{\abovedisplayskip}{0pt}
+	\setlength{\belowdisplayskip}{0pt}
+	\parbox[c]{\linewidth}{\begin{flalign}#1&&\end{flalign}}
+	\endgroup}
+\setlength{\parindent}{2em}
+\title{\textbf{Interstellar: A Global Equity Evaluation Model and Its Application on Asteroid Mining} }
+\author{A \and B \and C}
+\date{\today}
+
+\makeatletter
+\newcommand{\upcite}[1]{\textsuperscript{\textsuperscript{\cite{#1}}}}
+\makeatother
+
+% Created by Zu Wang 2022.12.20, I have changed it into the 2023 template, feel free to use it!
+
+\begin{document}
+\begin{abstract}
+	\small
+    \hfill \emph{``We use math to describe the vastness of space, the shape of time, the weight and worth of a human soul.''}
+
+    \hfill ---\emph{Foundation}
+
+The development of space resources is on the schedule of many countries. Resources acquired from various celestial bodies can have a profound impact in all walks of life. However, due to the disparity between countries in technology and economy, many countries may lose the opportunity of getting those resources. A global equity evaluation model should be built and applied on asteroid mining in order to promote global equity.
+
+To begin with, we provide our definition of global equity. \textbf{Global Equity } stands for: All countries have the ability to provide its people with sufficient \textbf{Protection}, \textbf{Education} and \textbf{Economic Resources} during their development.
+
+Then, we establish our \textbf{Global Equity Evaluation Model} based on \textbf{Optimized Cline Function}. The function covered the three aspects we described in our definition. It aims to calculate \textbf{Country Ability Index} which reflects each country's ability to provide these resources to its people. We selected 11 inferior indicators for the three aspects and uses \textbf{Entropy Weight Method} to determine the weight of each indicator. Among all the indicators, the weight of \textbf{Energy} is rising sharply over time which emphasizes the importance of space resources. After determining the weight of each indicator, we apply the \textbf{TOPSIS Method} to grade each section and use Optimized Cline Function to calculate the country ability index. We get the score of 74 countries with USA scoring 0.247 topping the list while Philippines scoring 0.033 ranks at the bottom. 
+
+Next, we use the country ability index to determine a \textbf{Standard Line}. Countries beneath the standard line are considered not capable of providing enough protection, education and economic resources to its people. We create the \textbf{CAID Function} to calculate the \textbf{Global Equity Index}. The idea behind this function is to calculate the sum of the distances between the below-line countries and the standard line. We find out that the global equity index is growing slowly from 0.48 to 0.59 in the last 20 years.
+
+After that, we propose the \textbf{Asteroid Mining Model} to describe and justify our proposed future of asteroid mining. In our model, the \textbf{Asteroid Mining Union} will do the mining , all the countries can fund. We combine the country ability index in the global equity distribution to determine the \textbf{Benefit Distribution Method} and quantify its \textbf{Impact} on global equity.
+
+Finally, we analyze the possible \textbf{Changes} in our proposed future by using \textbf{The Game Matrix}. We also propose \textbf{Policies} targeted for \textbf{Different Time Period}. Sensitivity analysis, the strengths and weaknesses of the models are discussed at the end of the paper.
+
+	\begin{keywords}
+		\footnotesize
+Optimized Cline Function, Country Ability Index, Global Equity Index, CAID Function, Asteroid Mining Model, Entropy Weight Method
+	\end{keywords}
+\end{abstract}
+\maketitle
+
+\begin{spacing}{0.05}
+	\tableofcontents
+\end{spacing}
+\clearpage
+\normalsize
+
+\include{Introduction.tex}
+\include{Assumptions and Notations.tex}
+\include{Task 1.tex}
+\include{Task 2.tex}
+\include{Task 3.tex}
+\include{Sensitivity Analysis.tex}
+\include{Future Updates for the Model.tex}
+\include{Strength and Weakness.tex}
+\include{Conclusion.tex}
+\addcontentsline{toc}{section}{References}
+\begin{thebibliography}{99}
+    \bibitem[1]{article1} "Wordle." Wikipedia, Wikimedia Foundation,  en.wikipedia.org/wiki/Wordle. 
+    \bibitem[2]{article2} Jadranda D.T.(2018). Applicability of Newton’s law of cooling in monetary economics. Physica A: Statistical Mechanics and its Applications, vol 494, 209-217.
+	%\bibitem[1]{article1} The Treaty on Principles Governing the Activities of States in the Exploration and Use of Outer Space, including the Moon and other Celestial Bodies, of 27 January 1967, United Nations RES 2222 (XXI).
+	\bibitem[3]{article2} Sanderson. G (2022). Solving Wordle using you keep your information strcak theory. https://www.3bluelbrown.com /lessons /wordle.
+	%\bibitem[3]{article3} Desikan, A. Supporting Equity and Environmental Justice.
+	\bibitem[4]{article4} Cline, R. S. (1977). World Power Assessment 1977: a Calculus of Strategic Drift.
+	\bibitem[5]{article5} Anielski, M. (2002). The Alberta GPI: Economy, GDP, and Trade. Pembina Institute.
+	\bibitem[6]{article6} Yitzhaki, S. (1983). On an extension of the Gini inequality index. International economic review, 617-628.
+	\bibitem[7]{article7} Mutschler, Max M., and Marius Bales. ``Global Militarisation Index 2019.'' (2019): 15.
+	\bibitem[8]{article8} Hart, D. V. (1964). Ethnocentrism and the ``Education Index''. Comparative Education Review, 8(2), 138-140.
+	\bibitem[9]{article9} Chen, P. (2021). Effects of the entropy weight on TOPSIS. Expert Systems with Applications, 168, 114186.
+	\bibitem[10]{article10} Fialho, D.\& Van Bergeijk, P. A. (2017). The proliferation of developing country classifications. The Journal of Development Studies, 53(1), 99-115.
+	\bibitem[11]{article11} Badescu, V. (Ed.). (2013). Asteroids: Prospective energy and material resources. Springer Science \& Business Media.
+
+\end{thebibliography}
+
+
+\end{document}

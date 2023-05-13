@@ -1,0 +1,41 @@
+\section{Assumptions and Notations}
+\subsection{Assumptions}
+$\bullet$ Assume that the results reported from each player were independent to each other, and the trial times distributions for each player were roughly the same.
+
+$\bullet$ Assume that the trial times larger than 7 can be treated as 7 times for simplification of our model because whether exactly 7 times or more won't affect our model much. 
+\subsection{Notations}
+
+\begin{longtable}{cc}
+	\caption{Notations} \\
+	\toprule[2pt]
+	Symbols        & Description   \\
+	\midrule
+	$N_{total}(t)$ & The number of results at the $t^{th}$ day\\
+	$N_{hard}(t)$& The number of results in hard mode at the $t^{th}$ day\\
+	$N_{Uptrend}(t)$&The number of results for uptrend part at the $t^{th}$ day\\
+	$N_{Downtrend}(t)$&The number of results for downtrend part at the $t^{th}$ day\\
+	$N_{predict}$&The prediction number of results on March 1, 2023\\
+	$n$&The total number of words in the data set.\\
+	$word_{i}$& The $i^{th}$ word in the data set.\\
+	$X_{vow}$ & The number of Vowel in a word\\
+	$X_{rep}$       & The multiplicity of repeated letters\\
+	$X_{freq}$    & The  frequency of the word in daily use\\
+	$X_{entropy}$      &  Entropy of the word\\
+	$X_{ratio}$      &  Ratio of Hard-Mode players among all players on that day \\
+	$R_{word-ratio}$& Correlation between word attributes and Hard-Mode Ratio\\
+ $\mu_{i}$ & The mean value of trial time results of the $i^{th}$ word\\
+ $\sigma_{i}$ &The variance of trial time results of the $i^{th}$ word\\
+ $t_{i,j}$&The percentage of results of j trial times cases of the $i^{th}$ word\\
+ $w_{i}$& The weight for $t_{i}$ when assessing the difficulty level\\
+ $s_{i}$& The weighted distribution score for the $i^{th}$ word.\\
+  $x_{i}$& The vector of the $i^{th}$ word projected to $\mathbb{R}^{2}$ for classification \\
+  $c_{i}$& The group center for the $i^{th}$ difficulty level.\\
+  $U_{i}$& The $i^{th}$ difficulty set.\\
+  $u_{i\,j}$& The membership degree for the $i_{th}$ word to the $j^{th}$ difficulty set. \\
+  $m$&Fuzzy exponent that determines the fuzziness of difficulty boundaries.\\
+  $level_{i}$&The difficulty level the $i^{th}$ word belongs to.\\
+  $Accuracy_{cls}$&The accuracy for difficulty classification\\
+	\bottomrule[2pt]
+
+\end{longtable}
+\par 

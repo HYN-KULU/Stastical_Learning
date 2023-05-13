@@ -1,0 +1,1 @@
+[num,txt]= xlsread("数据.xlsx","Table 2","A:L")

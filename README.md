@@ -1,5 +1,3 @@
-# MCM & ICM
+# Stastical Learning
 
-A history of learning, regardless of the grades.
-
-Keep Moving Forward.
+Learn statistical Learning
